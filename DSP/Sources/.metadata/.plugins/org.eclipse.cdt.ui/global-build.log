@@ -1,0 +1,7 @@
+17:45:35 **** Incremental Build of configuration Debug for project Blinky_Led_TIM ****
+make -j8 all 
+arm-none-eabi-size  Blinky_Led_TIM.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8708	     20	   1644	  10372	   2884	Blinky_Led_TIM.elf
+Finished building: default.size.stdout
+ 
