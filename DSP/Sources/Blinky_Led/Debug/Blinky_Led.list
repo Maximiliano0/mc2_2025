@@ -39,13 +39,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  17 .debug_macro  00014203  00000000  00000000  00024b34  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_line   00004dea  00000000  00000000  00038d37  2**0
+ 18 .debug_line   00004de8  00000000  00000000  00038d37  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_str    0007e834  00000000  00000000  0003db21  2**0
+ 19 .debug_str    0007e834  00000000  00000000  0003db1f  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .debug_frame  00000e88  00000000  00000000  000bc358  2**2
+ 20 .debug_frame  00000e88  00000000  00000000  000bc354  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 0000007a  00000000  00000000  000bd1e0  2**0
+ 21 .debug_line_str 0000007a  00000000  00000000  000bd1dc  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -360,32 +360,22 @@ int main(void)
 {
  80004d0:	b580      	push	{r7, lr}
  80004d2:	af00      	add	r7, sp, #0
-  /* USER CODE END 1 */
-
-  /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
  80004d4:	f000 f956 	bl	8000784 <HAL_Init>
-  /* USER CODE BEGIN Init */
-
-  /* USER CODE END Init */
 
   /* Configure the system clock */
   SystemClock_Config();
  80004d8:	f000 f80e 	bl	80004f8 <SystemClock_Config>
-  /* USER CODE BEGIN SysInit */
-
-  /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
  80004dc:	f000 f86c 	bl	80005b8 <MX_GPIO_Init>
+
   /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
   while (1)
   {
-    /* USER CODE END WHILE */
 	HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_10);
  80004e0:	f44f 6180 	mov.w	r1, #1024	; 0x400
  80004e4:	4803      	ldr	r0, [pc, #12]	; (80004f4 <main+0x24>)
@@ -423,9 +413,7 @@ void SystemClock_Config(void)
  8000518:	60da      	str	r2, [r3, #12]
  800051a:	611a      	str	r2, [r3, #16]
 
-  /** Configure the main internal regulator output voltage
-  */
-  __HAL_RCC_PWR_CLK_ENABLE();
+    __HAL_RCC_PWR_CLK_ENABLE();
  800051c:	2300      	movs	r3, #0
  800051e:	60bb      	str	r3, [r7, #8]
  8000520:	4b23      	ldr	r3, [pc, #140]	; (80005b0 <SystemClock_Config+0xb8>)
@@ -538,8 +526,6 @@ static void MX_GPIO_Init(void)
  80005c8:	609a      	str	r2, [r3, #8]
  80005ca:	60da      	str	r2, [r3, #12]
  80005cc:	611a      	str	r2, [r3, #16]
-/* USER CODE BEGIN MX_GPIO_Init_1 */
-/* USER CODE END MX_GPIO_Init_1 */
 
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOC_CLK_ENABLE();
@@ -608,8 +594,6 @@ static void MX_GPIO_Init(void)
  8000646:	4804      	ldr	r0, [pc, #16]	; (8000658 <MX_GPIO_Init+0xa0>)
  8000648:	f000 fa18 	bl	8000a7c <HAL_GPIO_Init>
 
-/* USER CODE BEGIN MX_GPIO_Init_2 */
-/* USER CODE END MX_GPIO_Init_2 */
 }
  800064c:	bf00      	nop
  800064e:	3720      	adds	r7, #32
@@ -636,7 +620,6 @@ __STATIC_FORCEINLINE void __disable_irq(void)
  8000660:	b672      	cpsid	i
 }
  8000662:	bf00      	nop
-  /* USER CODE BEGIN Error_Handler_Debug */
   /* User can add his own implementation to report the HAL error return state */
   __disable_irq();
   while (1)

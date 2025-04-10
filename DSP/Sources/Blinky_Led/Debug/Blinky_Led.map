@@ -2899,16 +2899,16 @@ LOAD C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_macro   0x0000000000013e79      0x1b6 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
  .debug_macro   0x000000000001402f      0x1d4 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
 
-.debug_line     0x0000000000000000     0x4dea
- .debug_line    0x0000000000000000      0x7a6 ./Core/Src/main.o
- .debug_line    0x00000000000007a6      0x706 ./Core/Src/stm32f4xx_hal_msp.o
- .debug_line    0x0000000000000eac      0x7c8 ./Core/Src/stm32f4xx_it.o
- .debug_line    0x0000000000001674      0x787 ./Core/Src/system_stm32f4xx.o
- .debug_line    0x0000000000001dfb       0x7a ./Core/Startup/startup_stm32f401retx.o
- .debug_line    0x0000000000001e75      0x9ed ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
- .debug_line    0x0000000000002862      0xce7 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
- .debug_line    0x0000000000003549      0xb25 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
- .debug_line    0x000000000000406e      0xd7c ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
+.debug_line     0x0000000000000000     0x4de8
+ .debug_line    0x0000000000000000      0x7a4 ./Core/Src/main.o
+ .debug_line    0x00000000000007a4      0x706 ./Core/Src/stm32f4xx_hal_msp.o
+ .debug_line    0x0000000000000eaa      0x7c8 ./Core/Src/stm32f4xx_it.o
+ .debug_line    0x0000000000001672      0x787 ./Core/Src/system_stm32f4xx.o
+ .debug_line    0x0000000000001df9       0x7a ./Core/Startup/startup_stm32f401retx.o
+ .debug_line    0x0000000000001e73      0x9ed ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
+ .debug_line    0x0000000000002860      0xce7 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
+ .debug_line    0x0000000000003547      0xb25 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
+ .debug_line    0x000000000000406c      0xd7c ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
 
 .debug_str      0x0000000000000000    0x7e834
  .debug_str     0x0000000000000000    0x7d58e ./Core/Src/main.o

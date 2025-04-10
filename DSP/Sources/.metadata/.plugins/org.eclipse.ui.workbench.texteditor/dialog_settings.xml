@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="irq"/>
+		<item key="selection" value="MX_TIM2_Init"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="NVIC"/>
+			<item value="NVI"/>
+			<item value="|REGISTER_CALLBACKS"/>
+			<item value="REGISTER_CALLBACKS"/>
+			<item value="USE_HAL_TIM_REGISTER_CALLBACKS"/>
+			<item value="PeriodElapsedCallback"/>
 			<item value="IRQ"/>
 			<item value="htim1"/>
 			<item value="toggle"/>
