@@ -94,7 +94,6 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
 	HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_10);
 	HAL_Delay(10);
     /* USER CODE BEGIN 3 */
@@ -155,6 +154,8 @@ static void MX_GPIO_Init(void)
 /* USER CODE END MX_GPIO_Init_1 */
 
   /* GPIO Ports Clock Enable */
+  __HAL_RCC_GPIOC_CLK_ENABLE();
+  __HAL_RCC_GPIOH_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
