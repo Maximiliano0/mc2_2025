@@ -175,9 +175,6 @@ HAL_StatusTypeDef HAL_Init(void)
   /* Use systick as time base source and configure 1ms tick (default clock after Reset is HSI) */
   HAL_InitTick(TICK_INT_PRIORITY);
 
-  /* Init the low level hardware */
-  HAL_MspInit();
-
   /* Return function status */
   return HAL_OK;
 }

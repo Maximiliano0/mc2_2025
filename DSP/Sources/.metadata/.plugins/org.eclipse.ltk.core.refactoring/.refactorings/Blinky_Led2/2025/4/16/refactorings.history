@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Blinky_Led2/Blinky_Led.ioc&apos; to &apos;Blinky_Led2.ioc&apos;" description="Rename resource &apos;Blinky_Led.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Blinky_Led.ioc" name="Blinky_Led2.ioc" stamp="1744667698006" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Blinky_Led2/Blinky_Led.ioc&apos; to &apos;Blinky_Led2.ioc&apos;" description="Rename resource &apos;Blinky_Led.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Blinky_Led.ioc" name="Blinky_Led2.ioc" stamp="1744668600732" updateReferences="true"/>
+</session>
